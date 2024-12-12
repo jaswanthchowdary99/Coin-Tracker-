@@ -82,3 +82,4 @@ function percentageChange(){
 }
 
 fetchDataWithThen(); 
+// fetchDataWithAsync();
