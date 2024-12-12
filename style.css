@@ -1,0 +1,139 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1A1A1C;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+.header-container{
+    padding: 20px 40px;
+}
+.body-container{
+    padding: 0px 40px;
+}
+.nav{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#search-bar{
+    width: 60vw;
+    padding: 15px;
+    color: white;
+    background-color: #1A1A1C;
+    border: 1px solid white;
+}
+button{
+    width: 18vw;
+    padding: 15px;
+    color: white;
+    background-color: #1A1A1C;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.table{
+    width: 100%;
+    overflow-x: scroll; 
+}
+.table::-webkit-scrollbar {
+    display: none;
+}
+.table tbody tr{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px 0px;
+    border-bottom: 1px solid white;
+}
+
+.table tbody tr td:nth-child(1){
+    width: 20%;
+}
+.table tbody tr td:nth-child(2){
+    width: 10%; 
+}
+.table tbody tr td:nth-child(3){
+    width: 10%;
+}
+.table tbody tr td:nth-child(4){
+    width: 20%;
+}
+.table tbody tr td:nth-child(5){
+    width: 10%;
+}
+.table tbody tr td:nth-child(6){
+    width: 20%;
+}
+.coin-img, td{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.coin-img img{
+    border-radius: 50%;
+}
+
+
+@media (max-width: 768px) {
+    .header-container, .body-container {
+        padding: 20px;
+    }
+    .nav {
+        flex-direction: column;
+        height: auto;
+    }
+    #search-bar {
+        width: 80vw;
+        padding: 12px;
+    }
+    button {
+        width: 40vw;
+        padding: 12px;
+    }
+    .table tbody tr {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 0px;
+    }
+    .table tbody tr td {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        gap: 15px;
+    }
+    #search-bar {
+        width: 82vw;
+        padding: 10px;
+    }
+    button {
+        width: 40vw;
+        padding: 10px;
+    }
+    .table tbody tr {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0px;
+    }
+    .table tbody tr td {
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+}

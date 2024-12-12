@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Coin Tracker</title>
+</head>
+<body>
+ <section class="header-container">
+ <div class="nav">
+    <input type="text" placeholder="Search By Name or Symbol" oninput="searchFunction()" id="search-bar">
+    <div class="btns">
+    <button id="btn" onclick="marketcapChange()">Sort By Mkt Cap</button>
+    <button id="btn" onclick="percentageChange()">Sort by percentage</button>
+    </div>
+ </div>
+ </section>
+
+ <section class="body-container">
+  <table class="table">
+    <tbody class="table-body">
+
+    </tbody>
+  </table>
+ </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
